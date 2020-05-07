@@ -31,13 +31,14 @@ a {
 }
 
 .header {
-  background-image: url('../img/header-box.png'), url('../img/header-background.jpg');
+  background-image: url('../img/header-background.jpg');
   background-repeat: no-repeat;
-  background-position: right 19% bottom -15px, center center;
-  //background-size: length, cover;
+  background-position: center center;
+  background-size: cover;
   //background-size: lenght auto
   //height: 100vmin;
   height: 700px;
+
   //width: 100%;
 }
 
@@ -126,3 +127,23 @@ a {
   background: $color-gradient;
 
 }
+
+.header__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &_left, &_right {
+    width: 50%;
+  }
+
+  &_right {
+    & img {
+      position: relative;
+      bottom: -15px;
+      right: 55px;
+    }
+  }
+
+}
+

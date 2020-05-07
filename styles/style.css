@@ -70,9 +70,10 @@ a {
   text-decoration: none;
 }
 .header {
-  background-image: url("../img/header-box.png"), url("../img/header-background.jpg");
+  background-image: url("../img/header-background.jpg");
   background-repeat: no-repeat;
-  background-position: right 19% bottom -15px, center center;
+  background-position: center center;
+  background-size: cover;
   height: 700px;
 }
 .header__ul {
@@ -147,4 +148,18 @@ a {
   color: #242424;
   box-shadow: 0px 1.13351px 2.74791px rgba(255,235,0,0.031), 0px 2.86674px 6.94968px rgba(255,235,0,0.044), 0px 5.84789px 14.1767px rgba(255,235,0,0.056), 0px 12.0455px 29.2013px rgba(255,235,0,0.069), 0px 33px 80px rgba(255,235,0,0.1);
   background: linear-gradient(to bottom, #ffdd6c, #fc0);
+}
+.header__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__heading_left,
+.header__heading_right {
+  width: 50%;
+}
+.header__heading_right img {
+  position: relative;
+  bottom: -15px;
+  right: 55px;
 }
