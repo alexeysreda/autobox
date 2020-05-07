@@ -97,7 +97,7 @@ a {
 .header__li:first-child .header__link .header__image_wrapper {
   width: 100px;
   height: 100px;
-  background-color: #fdfdfd;
+  background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,8 +116,11 @@ a {
 .header__link_white {
   font-weight: 700;
   font-size: 18px;
-  color: #fdfdfd;
+  color: #fafafa;
   margin-right: 40px;
+}
+.header__phone {
+  color: #fdfdfd;
 }
 .header__messanger:not(:last-child) {
   margin-right: 20px;
@@ -199,7 +202,7 @@ a {
 .advantages__icon {
   min-width: 88px;
   min-height: 88px;
-  background-color: #fdfdfd;
+  background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +231,7 @@ a {
   margin-bottom: 0;
 }
 .clear {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -254,7 +257,7 @@ a {
   position: relative;
 }
 .clear__image {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
   width: 172px;
   height: 118px;
   position: absolute;
