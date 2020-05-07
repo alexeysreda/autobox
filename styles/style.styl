@@ -157,7 +157,7 @@ a {
   font-weight: 700;
   font-size: 38px;
   line-height: 212.56%;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .section__subheading {
@@ -165,6 +165,7 @@ a {
   font-size: 22px;
   line-height: 157.2%;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 
@@ -188,7 +189,7 @@ a {
 .advantages__icon {
   min-width: 88px;
   min-height: 88px;
-  background-color: #FDFDFD;
+  background-color: $color-lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,17 +207,96 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 157.2%;
-  color: #242424;
+  color: $color-main;
   margin-bottom: 2px;
   margin-top: 0;
 
 }
 
-  .advantages__description {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 157.2%;
-    color: #242424;
-    margin-top: 0;
-    margin-bottom: 0;
+.advantages__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157.2%;
+  color: #242424;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.clear {
+  background-color: $color-lightgray;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.clear__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.clear__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 182px;
+
+
+}
+
+.clear__gradient {
+  width: 182px;
+  height: 128px;
+  background: $color-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.clear__image {
+  background-color: $color-lightgray;
+  width: 172px;
+  height: 118px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  & img {
+    position: relative;
+    //z-index: 2;
+
   }
+}
+
+.clear__item:nth-child(1) .clear__image img {
+  top: 5px;
+}
+.clear__item:nth-child(2) .clear__image img {
+  top: 15px;
+}
+.clear__item:nth-child(3) .clear__image img {
+  top: 15px;
+}
+.clear__item:nth-child(4) .clear__image img {
+  top: 12px;
+}
+.clear__item:nth-child(5) .clear__image img {
+  top: 10px;
+}
+.clear__item:nth-child(6) .clear__image img {
+  top: 8px;
+}
+
+.clear__description {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 157.2%;
+}
