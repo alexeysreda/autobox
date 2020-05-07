@@ -1,11 +1,128 @@
 @import '__fonts.styl';
+@import 'reset.css';
 @import '__variables.styl';
+@import '__helpers.styl';
 @import '__adaptive.styl';
 @import '__popup.styl';
 
 
 html, body {
   font-size: 16px;
-  color: $main-color;
+  color: $color-main;
+  font-weight: 400;
+  margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url('../img/header-box.png'), url('../img/header-background.jpg');
+  background-repeat: no-repeat;
+  background-position: right 19% bottom -15px, center center;
+  //background-size: length, cover;
+  //background-size: lenght auto
+  //height: 100vmin;
+  height: 700px;
+  //width: 100%;
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__ul_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__li:first-child .header__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  & .header__image_wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: $color-lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header__h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: $color-darkgray;
+  margin-left: 40px;
+}
+
+.header__link {
+  color: $color-darkdarkgray;
+  font-size: 16px;
+  font-weight: 400;
+
+  &_white {
+    font-weight: 700;
+    font-size: 18px;
+    color: $color-lightgray;
+    margin-right: 40px;
+  }
+}
+
+.header__messanger:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__heading_h2 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 114.2%;
+  margin-top: 125px;
+  margin-bottom: 10px;
+}
+
+.header__heading_h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 157.2%;
+  margin-bottom: 60px;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157.2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 70px;
+  color: $color-main;
+  box-shadow: 0px 1.13351px 2.74791px rgba(255, 235, 0, 0.0310018), 0px 2.86674px 6.94968px rgba(255, 235, 0, 0.0443709), 0px 5.84789px 14.1767px rgba(255, 235, 0, 0.0556291), 0px 12.0455px 29.2013px rgba(255, 235, 0, 0.0689982), 0px 33px 80px rgba(255, 235, 0, 0.1);
+  background: $color-gradient;
+
+}
