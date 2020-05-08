@@ -472,3 +472,10 @@ a {
   line-height: 212.56%;
   margin-left: 10px;
 }
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery__strong {
+  font-weight: 700;
+}
