@@ -129,6 +129,8 @@ a {
   color: $color-main;
   box-shadow: 0px 1.13351px 2.74791px rgba(255, 235, 0, 0.0310018), 0px 2.86674px 6.94968px rgba(255, 235, 0, 0.0443709), 0px 5.84789px 14.1767px rgba(255, 235, 0, 0.0556291), 0px 12.0455px 29.2013px rgba(255, 235, 0, 0.0689982), 0px 33px 80px rgba(255, 235, 0, 0.1);
   background: $color-gradient;
+  outline: none;
+  border: none;
 
 }
 
@@ -291,7 +293,7 @@ a {
   top: 12px;
 }
 .clear__item:nth-child(5) .clear__image img {
-  top: 10px;
+  top: 12px;
 }
 .clear__item:nth-child(6) .clear__image img {
   top: 8px;
@@ -303,4 +305,103 @@ a {
   margin-top: 30px;
   font-size: 18px;
   line-height: 157.2%;
+}
+
+.quiz {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.quiz__form {
+  height: 716px;
+  border: 10px solid;
+  border-image: $color-gradient 60 30;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('../img/quiz-background.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 180px;
+}
+
+.quiz__heading {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 212.56%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.quiz__subheading {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 212.56%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.quiz__counter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 123.7%;
+  color: $color-gray;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.quiz__question {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 123.7%;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.quiz__inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.quiz__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 212.56%;
+  margin-bottom: 5px;
+}
+
+.quiz__input_number {
+  border-width: 2px;
+  border-style: solid;
+  //border: 2px solid;
+  border-image: $color-gradient 30 30;
+
+  height: 50px;
+  width: 225px;
+  margin-bottom: 10px;
+}
+
+.button_arrow {
+  margin-top: 70px;
+}
+
+.quiz__checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.quiz__label_checkbox {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 212.56%;
+  margin-left: 10px;
 }
