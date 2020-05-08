@@ -392,7 +392,6 @@ a {
   padding-bottom: 50px;
 }
 .quiz__form {
-  height: 716px;
   border: 10px solid;
   border-image: linear-gradient(to bottom, #ffdd6c, #fc0) 60 30;
   background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/quiz-background.jpg") no-repeat center center;
@@ -449,9 +448,10 @@ a {
   margin-bottom: 5px;
 }
 .quiz__input_number {
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, #ffdd6c, #fc0) 30 30;
+  border: 2px solid #fc0;
+  padding-left: 15px;
+  color: #242424;
+  font-size: 16px;
   height: 50px;
   width: 225px;
   margin-bottom: 10px;
