@@ -670,3 +670,81 @@ a {
 .steps .button {
   margin-top: 40px;
 }
+
+.options {
+  background-color: $color-lightgray;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.options__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.options__item {
+  width: 18%;
+  margin-bottom: 30px;
+}
+
+.options__image {
+  background: linear-gradient(to left bottom, #F2F2F2 0%, #F2F2F2 75%, #F2F2F2 76%, $color-yellow-light 76%, $color-yellow-dark 100%);
+  //background-color: #F2F2F2;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    //object-fit: contain;
+    //object-position: right bottom;
+
+
+  }
+}
+
+.options__item:nth-child(4) .options__image img {
+  position: relative;
+  bottom: -20px;
+}
+
+.options__item:nth-child(6) .options__image img {
+  position: relative;
+  bottom: -6px;
+}
+
+.options__item:nth-child(7) .options__image img {
+  position: relative;
+  bottom: -15px;
+}
+
+.options__item:nth-child(8) .options__image img {
+  position: relative;
+  bottom: -1px;
+}
+
+.options__item:nth-child(9) .options__image img {
+  position: relative;
+  bottom: 5px;
+}
+
+.options__item:nth-child(9) .options__image img {
+  position: relative;
+  bottom: 5px;
+}
+
+
+
+
+
+.options__description {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157.2%;
+}
