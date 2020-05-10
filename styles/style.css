@@ -752,9 +752,10 @@ a {
   font-size: 18px;
   line-height: 157.2%;
 }
-.sertificates {
+.certificates {
   padding-top: 50px;
   padding-bottom: 50px;
+  background: linear-gradient(to bottom, #fff 0%, #fff 55.9%, #fafafa 56%, #fafafa 100%);
 }
 .certificates__list {
   display: flex;
@@ -762,12 +763,12 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.certificates__item {
-  height: auto;
+.certificates__item:not(:last-child) {
   margin-right: 15px;
 }
 .certificates__item:hover,
 .certificates__item:focus {
+  transform: translateY(-10px);
   background: linear-gradient(to bottom, #ffdd6c, #fc0);
   transition: all 0.4s ease;
 }
@@ -780,4 +781,10 @@ a {
   font-size: 20px;
   line-height: 157.2%;
   margin-top: 15px;
+}
+.footer {
+  height: 700px;
+  background: url("../img/footer-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }

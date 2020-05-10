@@ -15,17 +15,14 @@ let modal = new tingle.modal({
 
 let certificatesLinks = document.getElementsByClassName('certificates__link');
 for (let i = 0; i < certificatesLinks.length; i++) {
-    console.log(certificatesLinks[i]);
     let image = certificatesLinks[i].firstElementChild;
-    console.log(image);
     let imgSrc = image.getAttribute('src');
-    console.log(imgSrc);
 
     certificatesLinks[i].addEventListener('click', function (el) {
         el.preventDefault();
         // set content
-        modal.setContent(`<img alt="" src=${imgSrc}>`);
-
+        // modal.setContent(`<img alt="" src=${imgSrc}>`);
+        modal.setContent('<img alt="" src="' + imgSrc +'">');
 
     });
 
