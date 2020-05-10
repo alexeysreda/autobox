@@ -738,9 +738,6 @@ a {
 }
 
 
-
-
-
 .options__description {
   margin-bottom: 0;
   margin-top: 10px;
@@ -748,3 +745,41 @@ a {
   font-size: 18px;
   line-height: 157.2%;
 }
+
+.sertificates {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+}
+
+.certificates__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificates__item {
+  //width: 22%;
+  height: auto;
+  margin-right: 15px;
+
+  &:hover, &:focus {
+    background: $color-gradient;
+    transition: all 0.4s ease;
+  }
+  & a img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+
+
+.certificates__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157.2%;
+  margin-top: 15px;
+}
+
