@@ -5,7 +5,9 @@
 @import '__adaptive.styl';
 @import '__popup.styl';
 
-
+* {
+  box-sizing: border-box;
+}
 html, body {
   font-size: 16px;
   color: $color-main;
@@ -131,6 +133,7 @@ a {
   background: $color-gradient;
   outline: none;
   border: none;
+  cursor: pointer;
 
 }
 
@@ -600,4 +603,70 @@ a {
   font-size: 22px;
   line-height: 157.2%;
   margin-bottom: 70px;
+}
+
+.steps {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.steps__item {
+  border: 5px solid;
+  border-image: $color-gradient 60 30;
+  background-color: #fff;
+  //width: 30%;
+  margin-bottom: 8px;
+  padding: 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  width: 33%;
+  //flex-basis: 33%;
+}
+
+.steps__heading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 157.2%;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.steps__description {
+  font-size: 18px;
+  line-height: 157.2%;
+  text-align: right;
+  //padding-left: 30px;
+  width: 90%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.steps__number {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 157.2%;
+  color: #FAFAFA;
+  top: -10px;
+  left: 15px;
+  z-index: 2;
+
+}
+
+.steps .button {
+  margin-top: 40px;
 }
