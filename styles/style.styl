@@ -528,6 +528,10 @@ a {
   align-items: center;
 }
 
+.placement__text {
+  width: 100%;
+}
+
 
 .placement__list {
   //display: flex;
@@ -536,7 +540,7 @@ a {
   //align-items: flex-start;
   //flex-wrap: wrap;
   column-count: 2;
-  //width: 50%;
+  width: 100%;
 }
 .placement__item {
   position: relative;
@@ -545,8 +549,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  //width: 50%;
+  //align-items: center;
+  width: 100%;
+  //flex-basis: 50%;
 
   &::before {
     width: 24px;
@@ -565,10 +570,34 @@ a {
     content: '';
     position: absolute;
     left: 4px;
-    bottom: 6px;
+    bottom: 4px;
     border-left: 3px solid black;
     border-bottom: 3px solid black;
     border-radius: 3px;
     transform: rotate(-45deg);
   }
+}
+
+.placement__heading {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 140%;
+  margin-bottom: 20px;
+  margin-top: 0;
+  position: relative;
+
+  &::after {
+    content: url('../img/placement-arrow.png');
+    position: absolute;
+    //bottom: 0;
+    right: -10px;
+    top: 20%;
+  }
+}
+
+.placement__subheading {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 157.2%;
+  margin-bottom: 70px;
 }
