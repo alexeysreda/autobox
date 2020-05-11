@@ -99,8 +99,8 @@ a {
   color: #FDFDFD;
 }
 
-.header__messanger:not(:last-child) {
-  margin-right: 20px;
+.header__messenger:not(:last-child) {
+  margin-right: 10px;
 }
 
 .header__heading_h2 {
@@ -479,6 +479,10 @@ a {
     overflow: visible;
   }
 
+  &:hover, &:focus {
+    cursor: grab;
+  }
+
 
   & img {
     object-fit: cover;
@@ -725,6 +729,7 @@ a {
 .options__item:nth-child(8) .options__image img {
   position: relative;
   bottom: -1px;
+  right: -35px;
 }
 
 .options__item:nth-child(9) .options__image img {
@@ -773,12 +778,16 @@ a {
     //background: $color-gradient;
     transition: all 0.4s ease;
 
+
   }
   & a img {
     //object-fit: contain;
     //width: 100%;
     height: 390px;
     //height: 258px;
+  }
+  & a:hover, & a:focus {
+    cursor: zoom-in;
   }
 }
 
@@ -793,8 +802,11 @@ a {
 
 
 .footer {
-  height: 700px;
+  //height: 700px;
   background: url('../img/footer-background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
+  color: #FDFDFD;
+  padding-top: $section-padding;
+  padding-bottom: 40px;
 }

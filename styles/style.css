@@ -226,8 +226,8 @@ a {
 .header__phone {
   color: #fdfdfd;
 }
-.header__messanger:not(:last-child) {
-  margin-right: 20px;
+.header__messenger:not(:last-child) {
+  margin-right: 10px;
 }
 .header__heading_h2 {
   font-weight: 700;
@@ -545,6 +545,10 @@ a {
   z-index: 5;
   overflow: visible;
 }
+.swiper-slide:hover,
+.swiper-slide:focus {
+  cursor: grab;
+}
 .swiper-slide img {
   object-fit: cover;
   width: 100%;
@@ -736,6 +740,7 @@ a {
 .options__item:nth-child(8) .options__image img {
   position: relative;
   bottom: -1px;
+  right: -35px;
 }
 .options__item:nth-child(9) .options__image img {
   position: relative;
@@ -774,6 +779,10 @@ a {
 .certificates__item a img {
   height: 390px;
 }
+.certificates__item a:hover,
+.certificates__item a:focus {
+  cursor: zoom-in;
+}
 .certificates__text {
   font-weight: 400;
   font-size: 20px;
@@ -781,8 +790,10 @@ a {
   margin-top: 15px;
 }
 .footer {
-  height: 700px;
   background: url("../img/footer-background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  color: #fdfdfd;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
