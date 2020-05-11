@@ -476,65 +476,68 @@
 
 <footer class="footer">
     <div class="container">
-        <h2 class="section__heading section__heading_white">Оставьте заявку,</h2>
-        <h3 class="section__subheading section__subheading_white">если у вас остались вопросы! Мы перезвоним вам в ближайшее время</h3>
+        <h2 class="section__heading">Оставьте заявку,</h2>
+        <h3 class="section__subheading">если у вас остались вопросы! Мы перезвоним вам в ближайшее время</h3>
 
         <form class="footer__form" action="send/question.php">
 
-            <div class="footer__column">
-                <label for="footerName">Ваше имя</label>
-                <input type="text" class="footer__input" id="footerName">
-            </div>
-            <div class="footer__column">
-                <label for="footerPhone">Ваш телефон</label>
-                <input type="tel" class="footer__input" id="footerPhone">
-
-            </div>
-            <div class="footer__column">
-                <button type="submit">Отправить</button>
-                <div>
-                    <input type="checkbox" class="footer__checkbox" id="footerCheckbox">
-                    <label for="footerCheckbox">Согласен с политикой <a href="#">обработки персональных данных</a></label>
+            <div class="footer__form_wrapper">
+                <div class="footer__column">
+                    <label class="footer__label" for="footerName">Ваше имя</label>
+                    <input type="text" class="footer__input" id="footerName">
                 </div>
+                <div class="footer__column">
+                    <label class="footer__label" for="footerPhone">Ваш телефон</label>
+                    <input type="tel" class="footer__input" id="footerPhone">
+
+                </div>
+                <div class="footer__column">
+                    <button class="button" type="submit">Отправить</button>
+
+                </div>
+            </div>
+            <div class="footer__checkbox_row">
+                <input type="checkbox" class="footer__checkbox" id="footerCheckbox">
+                <label class="footer__label_checkbox" for="footerCheckbox">Согласен с политикой <a href="#">обработки персональных данных</a></label>
             </div>
 
         </form>
 
-        <h2 class="section__heading section__heading_white">Контакты</h2>
+        <h2 class="section__heading">Контакты</h2>
 
         <article class="footer__contacts">
-            <figure>
+            <figure class="footer__figure">
                 <div class="figure__image">
-                    <img src="img/icons/" alt="">
+                    <img src="img/icons/footer-address.svg" alt="">
                 </div>
-                <figcaption>г.Москва, ул.Ивановская, 2</figcaption>
+                <figcaption class="figure__link">г.Москва, ул.Ивановская, 2</figcaption>
             </figure>
-            <figure>
+            <figure class="footer__figure">
                 <div class="figure__image">
-                    <img src="img/icons/" alt="">
+                    <img src="img/icons/footer-mail.svg" alt="">
                 </div>
                 <figcaption>
-                    <a href="mailto:autobox@info.ru">autobox@info.ru</a>
+                    <a class="figure__link" href="mailto:autobox@info.ru">autobox@info.ru</a>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="footer__figure">
                 <div class="figure__image">
-                    <img src="img/icons/" alt="">
+                    <img src="img/icons/footer-phone.svg" alt="">
                 </div>
                 <figcaption>
-                    <a href="tel:+79115678989">+7 911 567-89-89</a>
+                    <a class="figure__link" href="tel:+79115678989">+7 911 567-89-89</a>
                 </figcaption>
             </figure>
 
             <div class="footer__links">
                 <div class="footer__social">
-                    <p>Наши социальные сети</p>
+                    <p class="footer__text">Наши социальные сети</p>
                     <a href=""><img src="img/icons/footer-instagram.svg" alt=""></a>
                     <a href=""><img src="img/icons/footer-facebook.svg" alt=""></a>
                     <a href=""><img src="img/icons/footer-twitter.svg" alt=""></a>
                 </div>
                 <div class="footer__messengers">
-                    <p>Напишите нам</p>
+                    <p class="footer__text">Напишите нам</p>
                     <a href=""><img src="img/icons/header-whatsapp.png" alt=""></a>
                     <a href=""><img src="img/icons/header-telegram.png" alt=""></a>
                     <a href=""><img src="img/icons/header-viber.png" alt=""></a>
