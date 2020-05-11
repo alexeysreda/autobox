@@ -769,12 +769,10 @@ a {
 .certificates__item:hover,
 .certificates__item:focus {
   transform: translateY(-10px);
-  background: linear-gradient(to bottom, #ffdd6c, #fc0);
   transition: all 0.4s ease;
 }
 .certificates__item a img {
-  object-fit: contain;
-  width: 100%;
+  height: 390px;
 }
 .certificates__text {
   font-weight: 400;
