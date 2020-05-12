@@ -156,6 +156,24 @@ a {
 
 }
 
+.header__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: 90px;
+
+  & img {
+    margin-right: 18px;
+  }
+}
+
+.header__heading_h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+}
+
 .advantages {
   background-color: #fff;
   padding-top: $section-padding;
@@ -397,6 +415,9 @@ a {
 .button_arrow {
   margin-top: 70px;
   cursor: pointer;
+  & img {
+    margin-left: 20px;
+  }
 }
 
 .quiz__checkbox {
