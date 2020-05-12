@@ -3,18 +3,21 @@
   font-style: normal;
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'), url("fonts/pt-sans-v11-latin_cyrillic-regular.woff2") format('woff2'), url("fonts/pt-sans-v11-latin_cyrillic-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'), url("fonts/pt-sans-v11-latin_cyrillic-700.woff2") format('woff2'), url("fonts/pt-sans-v11-latin_cyrillic-700.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   src: local('Montserrat Bold'), local('Montserrat-Bold'), url("fonts/montserrat-v14-latin-700.woff2") format('woff2'), url("fonts/montserrat-v14-latin-700.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 html,
 body {
@@ -245,6 +248,7 @@ a {
   color: #333;
   font-size: 16px;
   font-weight: 400;
+  display: flex;
 }
 .header__link_white {
   font-weight: 700;
@@ -252,11 +256,20 @@ a {
   color: #fafafa;
   margin-right: 40px;
 }
+.header__li:not(:first-child) .header__link:hover,
+.header__li:not(:first-child) .header__link:focus {
+  background: linear-gradient(to bottom, transparent 0%, transparent 49.9%, #ffdd6c 50%, #fc0 100%);
+}
 .header__phone {
   color: #fdfdfd;
 }
 .header__messenger:not(:last-child) {
   margin-right: 10px;
+}
+.header__messenger a:hover img,
+.header__messenger a:focus img {
+  transform: scale(1.4);
+  transition: transform 0.4s ease-out;
 }
 .header__heading_h2 {
   font-weight: 700;
@@ -282,11 +295,16 @@ a {
   width: 270px;
   height: 70px;
   color: #242424;
-  box-shadow: 0px 1.13351px 2.74791px rgba(255,235,0,0.031), 0px 2.86674px 6.94968px rgba(255,235,0,0.044), 0px 5.84789px 14.1767px rgba(255,235,0,0.056), 0px 12.0455px 29.2013px rgba(255,235,0,0.069), 0px 33px 80px rgba(255,235,0,0.1);
+  box-shadow: 0 1.13px 2.7px rgba(255,235,0,0.03), 0px 2.9px 6.9px rgba(255,235,0,0.04), 0px 5.8px 14.2px rgba(255,235,0,0.05), 0px 12px 29px rgba(255,235,0,0.07), 0px 33px 80px rgba(255,235,0,0.1);
   background: linear-gradient(to bottom, #ffdd6c, #fc0);
   outline: none;
   border: none;
   cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  font-weight: 700;
+  background: linear-gradient(to bottom, #ffd600, #ffc400);
 }
 .header__heading {
   display: flex;
@@ -515,6 +533,7 @@ a {
   height: 50px;
   width: 225px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 .button_arrow {
   margin-top: 70px;
@@ -619,6 +638,15 @@ a {
   align-items: center;
   margin-top: 35px;
   cursor: pointer;
+}
+.gallery__button:hover,
+.gallery__button:focus {
+  background: linear-gradient(to bottom, #ffd600, #ffc400);
+}
+.gallery__button:hover img,
+.gallery__button:focus img {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
 }
 .gallery__button_prev {
   margin-right: 10px;
@@ -870,6 +898,7 @@ a {
   border: 2px solid #fc0;
   font-size: 18px;
   width: 100%;
+  font-weight: 700;
 }
 .footer .button {
   width: 100%;
@@ -918,6 +947,10 @@ a {
   align-items: center;
   margin: 0;
 }
+.footer__figure:not(:first-child) .figure__link:hover,
+.footer__figure:not(:first-child) .figure__link:focus {
+  border-bottom: 2px solid #fc0;
+}
 .figure__image {
   width: 30px;
   height: 30px;
@@ -954,6 +987,13 @@ a {
 .footer__messengers a {
   margin-left: 15px;
 }
+.footer__social a:hover img,
+.footer__messengers a:hover img,
+.footer__social a:focus img,
+.footer__messengers a:focus img {
+  transform: scale(1.4);
+  transition: all 0.4s ease;
+}
 .footer__social {
   margin-bottom: 45px;
 }
@@ -972,4 +1012,8 @@ a {
   line-height: 123.7%;
   text-decoration: underline;
   color: #828282;
+}
+.footer__policy:hover,
+.footer__policy:focus {
+  color: #fafafa;
 }
