@@ -1231,7 +1231,7 @@ a {
     width: 100%;
   }
   .placement {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url("../img/placement-box.jpg");
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.6)), url("../img/placement-box.jpg");
     background-repeat: no-repeat;
     background-position: center center, center center;
     background-size: contain, contain;
@@ -1316,12 +1316,18 @@ a {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .header__messenger {
-    margin-right: 20px;
+  .header__messenger:not(:last-child) {
+    margin-right: 25px;
   }
   .header__messenger img {
     width: 35px;
     height: 35px;
+  }
+  .header__messenger:first-child img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 2px;
   }
   .header {
     background-size: contain, cover;
@@ -1398,6 +1404,52 @@ a {
   }
   .footer__messengers {
     margin-bottom: 25px;
+  }
+  .section__heading,
+  .quiz__heading {
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .section__subheading {
+    line-height: 1.15;
+  }
+  .clear__description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .placement__heading {
+    line-height: 1.15;
+  }
+  .placement__subheading {
+    line-height: 1.15;
+    margin-bottom: 35px;
+  }
+  .placement {
+    margin-bottom: 50px;
+  }
+  .steps .button {
+    margin: 40px auto 0 auto;
+  }
+  .footer .button {
+    margin-top: 25px;
+  }
+  .footer .section__heading {
+    margin-top: 40px;
+  }
+  .footer__text {
+    font-size: 1.1rem;
+  }
+  .footer__social img {
+    width: 35px;
+    height: 35px;
+  }
+  .footer__messengers a {
+    margin-left: 20px;
+  }
+  .footer__messengers img {
+    width: 35px;
+    height: 35px;
   }
 }
 @media screen and (max-width: 404.98px) {

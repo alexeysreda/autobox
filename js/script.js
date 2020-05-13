@@ -41,3 +41,4 @@ burger.addEventListener('click', function () {
 
 
 
+//todo закрывать меню по клику на ссылку, закрывать меню по клику вне меню
