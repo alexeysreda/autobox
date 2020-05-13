@@ -2,7 +2,6 @@
 @import 'reset.css';
 @import '__variables.styl';
 @import '__helpers.styl';
-@import '__adaptive.styl';
 @import '__popup.styl';
 * {
     box-sizing: border-box;
@@ -32,15 +31,52 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .header {
     background-image: url('../img/header-background.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    //background-size: lenght auto
-    //height: 100vmin;
     height: 700px;
-    //width: 100%;
+}
+
+.header__h1 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $color-darkgray;
+    margin: 0 0 0 15px;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.header__logo_wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: $color-lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__ul {
@@ -48,93 +84,50 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__ul_right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__li:first-child .header__link {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    & .header__image_wrapper {
-        width: 100px;
-        height: 100px;
-        background-color: $color-lightgray;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.header__h1 {
-    font-weight: 700;
-    font-size: 20px;
-    color: $color-darkgray;
-    margin-left: 15px;
-}
-
-.header__li {
-    //width: 100%;
-    //height: 100%;
+    width: 100%;
+    margin-left: 250px;
+    //flex-grow: 0.6;
 }
 
 .header__link {
-    color: $color-darkdarkgray;
-    font-size: 16px;
     font-weight: 400;
+    font-size: 1rem;
+    color: #333333;
+    background: transparent;
     display: flex;
-    //width: 100%;
-    //width: 100%;
-    //position: relative;
 
-    &_white {
-        font-weight: 700;
-        font-size: 18px;
-        color: $color-lightgray;
-        margin-right: 40px;
+    &:hover, &:focus {
+        background: linear-gradient(to bottom, transparent 0%, transparent 49.9%, $color-yellow-light 50%, $color-yellow-dark 100%);
     }
 }
 
-.header__li:not(:first-child) {
-    & .header__link {
-        &:hover, &:focus {
-            //font-weight: 700;
-            background: linear-gradient(to bottom, transparent 0%, transparent 49.9%, $color-yellow-light 50%, $color-yellow-dark 100%);
-            //position: relative;
-            //top: 0;
-            //left: 0;
-            //transition: all 0.4s ease;
+.header__link_phone {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #FDFDFD;
+    //margin-left: 250px;
+
+    &:hover, &:focus {
+        background: transparent;
+    }
+}
+
+.header__messenger {
+    &:hover, &:focus {
+        & img {
+            transform: scale(1.4);
+            transition: all 0.4s ease;
         }
     }
-}
-
-.header__phone {
-    color: #FDFDFD;
 }
 
 .header__messenger:not(:last-child) {
     margin-right: 10px;
 }
 
-.header__messenger {
-    & a:hover, & a:focus {
-        & img {
-            transform: scale(1.4);
-            transition: transform 0.4s ease-out;
-        }
-    }
-}
-
 .header__heading_h2 {
     font-weight: 700;
-    font-size: 52px;
+    font-size: 3.25rem;
     line-height: 114.2%;
     margin-top: 125px;
     margin-bottom: 10px;
@@ -142,14 +135,14 @@ a {
 
 .header__heading_h3 {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 157.2%;
     margin-bottom: 60px;
 }
 
 .button {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 157.2%;
     display: flex;
     flex-direction: row;
@@ -181,9 +174,11 @@ a {
     }
 
     &_right {
+        height: auto;
+
         & img {
             position: relative;
-            bottom: -15px;
+            bottom: -30px;
             right: 55px;
         }
     }
@@ -203,7 +198,7 @@ a {
 
 .header__heading_h4 {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 145%;
 }
 
@@ -215,14 +210,14 @@ a {
 
 .section__heading {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 212.56%;
     margin-bottom: 0;
 }
 
 .section__subheading {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 157.2%;
     margin-bottom: 50px;
     margin-top: 0;
@@ -264,7 +259,7 @@ a {
 
 .advantages__heading {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 157.2%;
     color: $color-main;
     margin-bottom: 2px;
@@ -273,7 +268,7 @@ a {
 
 .advantages__description {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 157.2%;
     color: #242424;
     margin-top: 0;
@@ -356,7 +351,7 @@ a {
     display: flex;
     width: 100%;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 157.2%;
 }
 
@@ -376,7 +371,7 @@ a {
 
 .quiz__heading {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 212.56%;
     text-align: center;
     margin-top: 0;
@@ -385,7 +380,7 @@ a {
 
 .quiz__subheading {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 212.56%;
     text-align: center;
     margin-top: 0;
@@ -394,7 +389,7 @@ a {
 
 .quiz__counter {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 123.7%;
     color: $color-gray;
     margin-top: 0;
@@ -403,7 +398,7 @@ a {
 
 .quiz__question {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 123.7%;
     margin-top: 0;
     margin-bottom: 45px;
@@ -425,7 +420,7 @@ a {
 
 .quiz__label {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 212.56%;
     margin-bottom: 5px;
 }
@@ -436,7 +431,7 @@ a {
     border: 2px solid $color-yellow-dark;
     padding-left: 15px;
     color: $color-main;
-    font-size: 16px;
+    font-size: 1rem;
     //border-image: $color-gradient 30 30;
     height: 50px;
     width: 225px;
@@ -462,7 +457,7 @@ a {
 
 .quiz__label_checkbox {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 212.56%;
     margin-left: 10px;
 }
@@ -563,6 +558,7 @@ a {
 
     &:hover, &:focus {
         background: $color-hover-gradient;
+
         & img {
             transform: scale(1.2);
             transition: all 0.4s ease;
@@ -642,7 +638,7 @@ a {
 
 .placement__heading {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 2.375rem;
     line-height: 140%;
     margin-bottom: 20px;
     margin-top: 0;
@@ -659,7 +655,7 @@ a {
 
 .placement__subheading {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 157.2%;
     margin-bottom: 70px;
 }
@@ -696,7 +692,7 @@ a {
 
 .steps__heading {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 157.2%;
     text-align: right;
     margin-top: 0;
@@ -704,7 +700,7 @@ a {
 }
 
 .steps__description {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 157.2%;
     text-align: right;
     //padding-left: 30px;
@@ -717,7 +713,7 @@ a {
     font-family: "Montserrat", sans-serif;
     position: absolute;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 157.2%;
     color: #FAFAFA;
     top: -10px;
@@ -756,11 +752,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    & img {
-        //object-fit: contain;
-        //object-position: right bottom;
-    }
 }
 
 .options__item:nth-child(4) .options__image img {
@@ -798,7 +789,7 @@ a {
     margin-bottom: 0;
     margin-top: 10px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 157.2%;
 }
 
@@ -843,7 +834,7 @@ a {
 
 .certificates__text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 157.2%;
     margin-top: 15px;
 }
@@ -876,7 +867,7 @@ a {
 
 .footer__label {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 212.56%;
 }
 
@@ -887,7 +878,7 @@ a {
     padding: 15px;
     color: $color-main;
     border: 2px solid $color-yellow-dark;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 100%;
     font-weight: 700;
 }
@@ -909,7 +900,7 @@ a {
 
 .footer__label_checkbox {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 123.7%;
     color: #FDFDFD;
     padding-top: 2px;
@@ -917,7 +908,7 @@ a {
 
     & a {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 123.7%;
         color: #FDFDFD;
         text-decoration: underline;
@@ -949,9 +940,9 @@ a {
 }
 
 .footer__figure:not(:first-child) {
-  & .figure__link:hover, & .figure__link:focus {
-    border-bottom: 2px solid $color-yellow-dark;
-  }
+    & .figure__link:hover, & .figure__link:focus {
+        border-bottom: 2px solid $color-yellow-dark;
+    }
 }
 
 .figure__image {
@@ -966,7 +957,7 @@ a {
 
 .figure__link {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 123.7%;
     color: #FDFDFD;
 }
@@ -992,15 +983,13 @@ a {
     & a {
         margin-left: 15px;
 
-      &:hover, &:focus {
-        & img {
-          transform: scale(1.4);
-          transition: all 0.4s ease;
+        &:hover, &:focus {
+            & img {
+                transform: scale(1.4);
+                transition: all 0.4s ease;
+            }
         }
-      }
     }
-
-
 }
 
 .footer__social {
@@ -1020,12 +1009,71 @@ a {
 
 .footer__policy {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 123.7%;
     text-decoration: underline;
     color: #828282;
 
     &:hover, &:focus {
-      color: $color-lightgray;
+        color: $color-lightgray;
     }
 }
+
+.mobile-menu__button {
+    width: 30px;
+    height: 3px;
+    background-color: $color-yellow-dark;
+    display: none;
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    border-radius: 10px;
+    z-index: 51;
+    box-shadow: 0 2px 5px $color-gray;
+
+
+    &::before {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: $color-yellow-dark;
+        position: absolute;
+        left: 0;
+        top: -9px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px $color-gray;
+    }
+
+    &::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: $color-yellow-dark;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px $color-gray;
+    }
+
+    &_opened {
+        background-color: transparent;
+        box-shadow: none;
+
+        &::before {
+            transform: rotate(-45deg);
+            transition: all 0.4s ease;
+            top: 0;
+            box-shadow: none;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+            transition: all 0.4s ease;
+            top: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+@import '__adaptive.styl';

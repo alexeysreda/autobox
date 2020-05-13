@@ -22,7 +22,7 @@ for (let i = 0; i < certificatesLinks.length; i++) {
         el.preventDefault();
         // set content
         // modal.setContent(`<img alt="" src=${imgSrc}>`);
-        modal.setContent('<img alt="" src="' + imgSrc +'">');
+        modal.setContent('<img alt="" src="' + imgSrc + '">');
 
     });
 
@@ -35,10 +35,15 @@ modal.open();
 modal.close();
 
 
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
 
 
+burger.addEventListener('click', function () {
+    this.classList.toggle('mobile-menu__button_opened');
+    mobileMenu.classList.toggle('header__ul_visible');
 
-
+});
 
 
 
