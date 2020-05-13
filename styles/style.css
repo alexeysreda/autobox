@@ -1451,6 +1451,9 @@ a {
     width: 35px;
     height: 35px;
   }
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 404.98px) {
   .clear__item {
