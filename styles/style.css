@@ -169,6 +169,7 @@ body {
   color: #242424;
   font-weight: 400;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
