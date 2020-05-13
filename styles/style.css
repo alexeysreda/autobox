@@ -1174,7 +1174,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #fafafa;
-    height: 50vh;
+    height: 50vmax;
     width: 100vw;
     position: fixed;
     right: 0;
