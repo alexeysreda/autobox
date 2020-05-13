@@ -206,10 +206,15 @@
 
     .placement__heading::after {
         left: 20%;
+        right: initial;
     }
 
     .steps__item {
         padding: 20px;
+    }
+
+    .options__item {
+        width: 40%;
     }
 
 
@@ -235,7 +240,7 @@
     }
 
     .placement__heading::after {
-        right: -10%;
+        right: 0;
         left: inherit;
     }
 
@@ -319,6 +324,24 @@
     .steps__item {
         width: 100%;
         height: auto;
+    }
+
+    .options__item {
+        width: 48%;
+    }
+
+    .options__image img {
+        justify-content: flex-end;
+        align-items: flex-end;
+        bottom: 0 !important;
+        right: 0 !important;
+        //height: auto;
+        //width: 100%;
+    }
+
+
+    .options__item img {
+        max-width: 140px;
     }
 
 
