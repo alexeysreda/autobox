@@ -23,26 +23,22 @@ for (let i = 0; i < certificatesLinks.length; i++) {
         // set content
         // modal.setContent(`<img alt="" src=${imgSrc}>`);
         modal.setContent('<img alt="" src="' + imgSrc + '">');
-
     });
-
 }
 
 // open modal
 modal.open();
-
 // close modal
 modal.close();
 
 
+// mobile burger menu
 const burger = document.getElementById('burger');
 const mobileMenu = document.getElementById('mobileMenu');
-
 
 burger.addEventListener('click', function () {
     this.classList.toggle('mobile-menu__button_opened');
     mobileMenu.classList.toggle('header__ul_visible');
-
 });
 
 

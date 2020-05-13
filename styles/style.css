@@ -1223,6 +1223,12 @@ a {
   .quiz__heading {
     line-height: 1.25;
   }
+  .gallery__buttons {
+    justify-content: center;
+  }
+  .gallery__button_prev {
+    margin-right: 40px;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .header__link_phone {
