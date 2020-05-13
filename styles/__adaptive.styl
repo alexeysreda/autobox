@@ -36,6 +36,22 @@
         color: $color-main;
     }
 
+    .clear__list {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .clear__item {
+        width: 30%;
+        align-items: center;
+    }
+
+    .clear__description {
+        margin-top: 15px;
+        width: 60%;
+        text-align: center;
+    }
+
 
 }
 
@@ -151,6 +167,8 @@
 
 
 
+
+
 }
 
 @media screen and (max-width: 767.98px) {
@@ -161,6 +179,7 @@
 
 @media screen and (max-width: 575.98px) {
     .container {
+        //max-width: 320px;
         //max-width: 1px;
     }
 
@@ -173,5 +192,22 @@
 
     .header__location {
         margin-top: 40px;
+    }
+
+    .clear__item {
+        width: 50%;
+    }
+
+    .clear__description {
+        line-height: 1.25;
+    }
+
+
+}
+
+@media screen and (max-width: 404.98px) {
+
+    .clear__item {
+        width: 100%;
     }
 }
