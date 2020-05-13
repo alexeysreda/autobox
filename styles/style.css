@@ -159,7 +159,6 @@ body {
   align-items: center;
   width: auto;
   height: auto;
-  background: linear-gradient(to bottom, #ffdd6c, #fc0);
 }
 * {
   box-sizing: border-box;
@@ -1114,6 +1113,13 @@ a {
   .placement__heading::after {
     right: -120px;
   }
+  .certificates__item {
+    width: 23%;
+  }
+  .certificates__item a img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .container {
@@ -1237,6 +1243,9 @@ a {
   }
   .options__item {
     width: 40%;
+  }
+  .tingle-modal-box__content img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 767.98px) {

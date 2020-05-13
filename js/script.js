@@ -20,8 +20,6 @@ for (let i = 0; i < certificatesLinks.length; i++) {
 
     certificatesLinks[i].addEventListener('click', function (el) {
         el.preventDefault();
-        // set content
-        // modal.setContent(`<img alt="" src=${imgSrc}>`);
         modal.setContent('<img alt="" src="' + imgSrc + '">');
     });
 }
