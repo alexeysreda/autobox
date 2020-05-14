@@ -42,7 +42,7 @@ burger.addEventListener('click', function () {
     mobileMenu.classList.toggle('header__ul_visible');
 });
 
-mobileMenuLinks.forEach(e => {
+mobileMenuLinks.forEach(function(e) {
     e.addEventListener('click', function() {
         mobileMenu.classList.remove('header__ul_visible');
         burger.classList.remove('mobile-menu__button_opened');
