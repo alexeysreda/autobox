@@ -185,7 +185,7 @@
     <section class="quiz container">
 
 
-        <form class="quiz__form" action="send/quiz.php">
+        <form class="quiz__form" id="quizForm" action="mailsendmailer/send.php" method="post">
 
             <article class="quiz__form_wrapper quiz__question_first">
                 <h2 class="quiz__heading" id="quiz">Рассчитайте стоимость вашего
@@ -366,7 +366,7 @@
 
                     </div>
                     <div class="quiz__submit">
-                        <button type="submit" class="button quiz__button_fifth">Отправить</button>
+                        <button type="submit" class="button quiz__button_fifth" id="quizButton">Отправить</button>
                         <div class="quiz__checkbox">
                             <input class="quiz__checkbox" type="checkbox" name="quizPolicyCheckbox"
                                    id="quizPolicyCheckbox" required checked>
@@ -628,7 +628,7 @@
         <h2 class="section__heading">Оставьте заявку,</h2>
         <h3 class="section__subheading">если у вас остались вопросы! Мы перезвоним вам в ближайшее время</h3>
 
-        <form class="footer__form" action="send/question.php">
+        <form class="footer__form" action="mailsendmailer/send.php" method="post">
 
             <div class="footer__form_wrapper">
                 <div class="footer__column">

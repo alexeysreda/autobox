@@ -65,23 +65,88 @@ let quizFifth = document.getElementsByClassName('quiz__question_fifth')[0];
 buttonFirst.addEventListener('click', function() {
     quizFirst.style.display = 'none';
     quizSecond.style.display = 'block';
-
 });
 
 buttonSecond.addEventListener('click', function() {
     quizSecond.style.display = 'none';
     quizThird.style.display = 'block';
-
 });
 
 buttonThird.addEventListener('click', function() {
     quizThird.style.display = 'none';
     quizFourth.style.display = 'block';
-
 });
 
 buttonFourth.addEventListener('click', function() {
     quizFourth.style.display = 'none';
     quizFifth.style.display = 'block';
-
 });
+
+// forms to PHPMailer
+// Отправка данных на сервер
+
+// quizForm.trigger('reset');
+// let send = function() {
+//     'use strict';
+//     quizForm.addEventListener('submit', function(e) {
+//         e.preventDefault();
+//         document.fetch({
+//             url: '../mailsendmailer/send.php',
+//             type: 'POST',
+//             contentType: false,
+//             processData: false,
+//             data: new FormData(this),
+//             success: function(msg) {
+//                 console.log(msg);
+//                 if (msg == 'ok') {
+//                     alert('Сообщение отправлено');
+//                     quizForm.trigger('reset'); // очистка формы
+//                 } else {
+//                     alert('Ошибка');
+//                 }
+//             }
+//         });
+//     });
+// };
+//
+// send();
+
+//
+// document.addEventListener("DOMContentLoaded",function() {
+//     //получить кнопку
+//     const mybutton = document.getElementById('quizButton');
+//     //подписаться на событие click по кнопке и назначить обработчик, который будет выполнять действия, указанные в безымянной функции
+//     mybutton.addEventListener("click", function(){
+//         //1. Сбор данных, необходимых для выполнения запроса на сервере
+//         let quizWidth = document.getElementById('quizWidth').value;
+//         let quizHeight = document.getElementById('quizHeight').value;
+//         let quizDepth = document.getElementById('quizDepth').value;
+//         let quizWidth = document.getElementById('quizWidth').value;
+//         let quizWidth = document.getElementById('quizWidth').value;
+//         //Подготовка данных для отправки на сервер
+//         //т.е. кодирование с помощью метода encodeURIComponent
+//         name = 'nameUser=' + encodeURIComponent(name);
+//         // 2. Создание переменной request
+//         let request = new XMLHttpRequest();
+//         // 3. Настройка запроса
+//         request.open('POST','../mailsendmailer/send.php',true);
+//         // 4. Подписка на событие onreadystatechange и обработка его с помощью анонимной функции
+//         request.addEventListener('readystatechange', function() {
+//             //если запрос пришёл и статус запроса 200 (OK)
+//             if ((request.readyState==4) && (request.status==200)) {
+//                 // например, выведем объект XHR в консоль браузера
+//                 console.log(request);
+//                 // и ответ (текст), пришедший с сервера в окне alert
+//                 console.log(request.responseText);
+//                 // получить элемент c id = welcome
+//                 let welcome = document.getElementById('welcome');
+//                 // заменить содержимое элемента ответом, пришедшим с сервера
+//                 welcome.innerHTML = request.responseText;
+//             }
+//         });
+//         // Устанавливаем заголовок Content-Type(обязательно для метода POST). Он предназначен для указания кодировки, с помощью которой зашифрован запрос. Это необходимо для того, чтобы сервер знал как его раскодировать.
+//         request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+//         // 5. Отправка запроса на сервер. В качестве параметра указываем данные, которые необходимо передать (необходимо для POST)
+//         request.send(name);
+//     });
+// });

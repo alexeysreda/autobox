@@ -1237,7 +1237,7 @@ a {
     width: 60%;
     text-align: center;
   }
-  .quiz__form {
+  .quiz__form_wrapper {
     padding: 40px;
   }
   .quiz__input_number {
@@ -1348,7 +1348,7 @@ a {
   .section__heading {
     line-height: 1.25;
   }
-  .quiz__form {
+  .quiz__form_wrapper {
     padding: 20px;
   }
   .quiz__column {
@@ -1360,6 +1360,10 @@ a {
   }
   .quiz__input_number {
     width: 100%;
+  }
+  .quiz__question_second .quiz__inputs label,
+  .quiz__question_third .quiz__inputs label {
+    margin-bottom: 15px;
   }
   .placement {
     background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.6)), url("../img/placement-box.jpg");
@@ -1436,6 +1440,17 @@ a {
   .footer__figure {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .quiz__question_fifth .quiz__input_number {
+    width: 100%;
+  }
+  .quiz__question_fifth .quiz__submit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .quiz__question_fifth .quiz__submit .button {
+    margin-bottom: 15px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -1584,6 +1599,9 @@ a {
   }
   .footer__copyright {
     margin-top: 20px;
+  }
+  .quiz__question_fourth .quiz__column {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 404.98px) {
