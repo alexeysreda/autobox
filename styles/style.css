@@ -130,8 +130,8 @@ body {
 .footer__form input[type="radio"]:checked + label:after,
 .quiz__form input[type="radio"]:not(:checked) + label:after,
 .footer__form input[type="radio"]:not(:checked) + label:after {
-  left: 4px;
-  top: 4px;
+  left: 6px;
+  top: 6px;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -148,6 +148,88 @@ body {
 .quiz__form input[type="radio"]:checked + label:after,
 .footer__form input[type="radio"]:checked + label:after {
   opacity: 1;
+}
+#changing {
+  display: inline-block;
+  animation: slidedown 4s infinite;
+  -webkit-animation: slidedown 4s infinite;
+  -moz-animation: slidedown 4s infinite;
+}
+@-moz-keyframes slidedown {
+  0% {
+    opacity: 50;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  7% {
+    transform: translateY(-1em);
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@-webkit-keyframes slidedown {
+  0% {
+    opacity: 50;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  7% {
+    transform: translateY(-1em);
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@-o-keyframes slidedown {
+  0% {
+    opacity: 50;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  7% {
+    transform: translateY(-1em);
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@keyframes slidedown {
+  0% {
+    opacity: 50;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  7% {
+    transform: translateY(-1em);
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 100;
+  }
 }
 .tingle-modal-box {
   width: auto;
@@ -464,7 +546,7 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.quiz__form {
+.quiz__form_wrapper {
   border: 10px solid;
   border-image: linear-gradient(to bottom, #ffdd6c, #fc0) 60 30;
   background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/quiz-background.jpg") no-repeat center center;
@@ -548,6 +630,51 @@ a {
   font-size: 0.875rem;
   line-height: 212.56%;
   margin-left: 10px;
+}
+.quiz__question_fourth .quiz__checkbox {
+  margin-bottom: 10px;
+}
+.quiz__question_second,
+.quiz__question_third,
+.quiz__question_fourth,
+.quiz__question_fifth {
+  display: none;
+}
+.quiz__question_fourth .quiz__inputs {
+  justify-content: flex-start;
+}
+.quiz__question_fourth .quiz__column:first-child {
+  margin-right: 50px;
+}
+.quiz__question_fifth .quiz__heading {
+  line-height: 1.2;
+}
+.quiz__question_fifth .quiz__subheading {
+  line-height: 1.2;
+  margin-top: 25px;
+}
+.quiz__question_fifth .quiz__inputs {
+  justify-content: flex-start;
+}
+.quiz__question_fifth .quiz__input_number {
+  width: 270px;
+}
+.quiz__question_fifth .quiz__column:first-child {
+  margin-right: 30px;
+}
+.quiz__question_fifth .button {
+  margin-right: 30px;
+}
+.quiz__question_fifth .quiz__label_checkbox a {
+  color: #242424;
+  text-decoration: underline;
+}
+.quiz__submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 80px;
 }
 .gallery {
   padding-top: 50px;
@@ -991,6 +1118,9 @@ a {
 .footer__messengers a:focus img {
   transform: scale(1.4);
   transition: all 0.4s ease;
+}
+.footer__messengers {
+  justify-content: flex-start;
 }
 .footer__social {
   margin-bottom: 45px;
