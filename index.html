@@ -199,22 +199,26 @@
                     <div class="quiz__inputs">
                         <div class="quiz__column">
                             <label class="quiz__label" for="quizWidth">Ширина, мм</label>
-                            <input class="quiz__input_number" type="number" name="quizWidth" id="quizWidth" value="Ширина, мм">
+                            <input class="quiz__input_number" type="number" name="quizWidth" id="quizWidth"
+                                   value="Ширина, мм">
 
 
                         </div>
                         <div class="quiz__column">
                             <label class="quiz__label" for="quizHeight">Высота, мм</label>
-                            <input class="quiz__input_number" type="number" name="quizHeight" id="quizHeight" value="Высота, мм">
+                            <input class="quiz__input_number" type="number" name="quizHeight" id="quizHeight"
+                                   value="Высота, мм">
 
                         </div>
                         <div class="quiz__column">
                             <label class="quiz__label" for="quizDepth">Глубина, мм</label>
-                            <input class="quiz__input_number" type="number" name="quizDepth" id="quizDepth" value="Глубина, мм">
+                            <input class="quiz__input_number" type="number" name="quizDepth" id="quizDepth"
+                                   value="Глубина, мм">
 
                         </div>
                     </div>
-                    <p>Если не знаете какой-либо из параметров, оставьте поле пустым. Если все размеры неизвестны, переходите к следующему вопросу.</p>
+                    <p>Если не знаете какой-либо из параметров, оставьте поле пустым. Если все размеры неизвестны,
+                        переходите к следующему вопросу.</p>
 
                     <button type="button" class="button button_arrow quiz__button_first">Следующий вопрос <img
                             src="img/icons/button-arrow-right.svg" alt=""></button>
@@ -231,11 +235,14 @@
                     <h4 class="quiz__question">Как расположены стены рядом с местом, выбранным вами для шкафа?</h4>
 
                     <div class="quiz__inputs">
-                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementWalls" value="Рядом есть стены">
+                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementWalls"
+                               value="Рядом есть стены">
                         <label for="quizPlacementWalls">Рядом есть стены</label>
-                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementNoWalls" value="Стен рядом нет">
+                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementNoWalls"
+                               value="Стен рядом нет">
                         <label for="quizPlacementNoWalls">Стен рядом нет, открытое место</label>
-                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementDontKnow" value="Не знаю">
+                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementDontKnow"
+                               value="Не знаю">
                         <label for="quizPlacementDontKnow">Не знаю</label>
                     </div>
                     <button type="button" class="button button_arrow quiz__button_second">Следующий вопрос <img
@@ -259,7 +266,8 @@
                         <label for="quizShelfs-3-5">От 3 до 5</label>
                         <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfs-5" value="более 5">
                         <label for="quizShelfs-5">Более 5</label>
-                        <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfsDontKnow" value="не знаю">
+                        <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfsDontKnow"
+                               value="не знаю">
                         <label for="quizShelfsDontKnow">Не знаю</label>
                     </div>
                     <button type="button" class="button button_arrow quiz__button_third">Следующий вопрос <img
@@ -303,6 +311,11 @@
                                 <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
                                        id="quizOptions-5" value="Освещение">
                                 <label class="quiz__label_checkbox" for="quizOptions-5">Освещение</label>
+                            </div>
+                            <div class="quiz__checkbox">
+                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
+                                       id="quizOptions-11" value="Цветовое решение">
+                                <label class="quiz__label_checkbox" for="quizOptions-11">Индивидуальный цвет</label>
                             </div>
                         </div>
                         <div class="quiz__column">
@@ -418,7 +431,6 @@
                 <div class="swiper-slide"><img src="img/gallery/gallery-22.jpg" alt="роллетный шкаф"></div>
 
 
-
             </div>
 
 
@@ -446,7 +458,7 @@
                     <li class="placement__item">Гараж</li>
                     <li class="placement__item">Паркинг</li>
                     <li class="placement__item">Коридор</li>
-                    <li class="placement__item">Мед.учреждение</li>
+
                 </ul>
             </article>
             <img src="img/placement-box.png" alt="роллетный шкаф">
@@ -643,7 +655,8 @@
             </div>
             <div class="footer__checkbox_row">
                 <input type="checkbox" class="footer__checkbox" id="footerCheckbox" required checked>
-                <label class="footer__label_checkbox" for="footerCheckbox">Согласен с политикой <a href="policy.html" target="_blank">обработки
+                <label class="footer__label_checkbox" for="footerCheckbox">Согласен с политикой <a href="policy.html"
+                                                                                                   target="_blank">обработки
                     персональных данных</a></label>
             </div>
 
@@ -711,7 +724,7 @@
 
 
 </footer>
-
+<script src="js/jquery-slim-min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/tingle.min.js"></script>
 <script src="js/script.js"></script>
