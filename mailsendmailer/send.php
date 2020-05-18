@@ -15,7 +15,7 @@ try {
     $mail->SMTPAuth   = true;
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера GMAIL
-    $mail->Username   = 'test test'; // Логин на почте
+    $mail->Username   = 'test test 222'; // Логин на почте
     $mail->Password   = 'YOURPASSWORD'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
