@@ -271,52 +271,6 @@ body {
   width: auto;
   height: auto;
 }
-.modal__window {
-  background-color: #242424;
-  color: #fdfdfd;
-  padding: 60px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 600px;
-  height: auto;
-  max-width: 90vmin;
-}
-.modal__heading {
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 157.2%;
-  margin-bottom: 15px;
-}
-.modal__label {
-  font-weight: 400;
-  font-size: 1.125rem;
-  margin-bottom: 5px;
-}
-.modal__input {
-  color: #242424;
-  height: 60px;
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: 700;
-  background-color: #fdfdfd;
-  border: 1px solid #fc0;
-  margin-bottom: 15px;
-  width: 80%;
-}
-.modal__window div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-.modal__window .button {
-  width: 80%;
-  margin-top: 15px;
-}
 .modal__sent {
   width: 600px;
   max-width: 90vmin;
@@ -1786,7 +1740,6 @@ a {
   .quiz__question_fourth .quiz__column {
     margin-bottom: 0;
   }
-  .modal__window,
   .modal__sent {
     padding: 10px;
   }

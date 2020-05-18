@@ -30,55 +30,6 @@ modal.open();
 modal.close();
 
 
-// modal form
-
-let modalForm = new tingle.modal({
-    footer: false,
-    stickyFooter: false,
-    closeMethods: ['overlay', 'button', 'escape'],
-    closeLabel: "закрыть",
-
-    beforeClose: function () {
-        return true; // close the modal
-        return false; // nothing happens
-    }
-
-});
-
-let modalFormContent = '<form id="modalForm" class="modal__window" action="mailsendmailer/order.php" method="post">\n' +
-    '    <h2 class="modal__heading">Оставьте свой телефон, и мы Вам перезвоним!</h2>\n' +
-    '    <label class="modal__label" for="modalName">Ваше имя</label>\n' +
-    '    <input class="modal__input" type="text" id="modalName" name="modalName" required>\n' +
-    '    <label class="modal__label" for="modalPhone">Ваш телефон</label>\n' +
-    '    <input class="modal__input" type="text" id="modalPhone" name="modalPhone" required>\n' +
-    '\n' +
-    '    <div>\n' +
-    '        <input type="checkbox" class="footer__checkbox" id="modalCheckbox" required checked>\n' +
-    '        <label class="footer__label_checkbox" for="modalCheckbox">Согласен с политикой <a href="policy.html"\n' +
-    '                                                                                          target="_blank">обработки\n' +
-    '            персональных данных</a></label>\n' +
-    '    </div>\n' +
-    '\n' +
-    '    <button type="submit" class="button">Отправить</button>\n' +
-    '\n' +
-    '\n' +
-    '</form>';
-
-let orderButton = document.getElementById('orderButton');
-
-orderButton.addEventListener('click', function (el) {
-    el.preventDefault();
-    modalForm.setContent(modalFormContent);
-});
-
-
-// open modal
-modalForm.open();
-// close modal
-modalForm.close();
-
-
-
 // modal sent
 
 let modalSent = new tingle.modal({
@@ -102,8 +53,7 @@ let modalSentContent = '<div class="modal__sent">\n' +
     '\n' +
     '</div>';
 
-
-
+modalSent.setContent(modalSentContent);
 
 
 // open modal
@@ -181,7 +131,7 @@ $(function () {
             success: function (msg) {
                 console.log(msg);
                 if (msg == 'ok') {
-                    modalSent.setContent(modalSentContent);
+                    modalSent.open();
                     $('#quizForm').trigger('reset'); // очистка формы
                 } else {
                     alert('Ошибка');
@@ -208,35 +158,9 @@ $(function () {
             success: function (msg) {
                 console.log(msg);
                 if (msg == 'ok') {
-                    modalSent.setContent(modalSentContent);
+
+                    modalSent.open();
                     $('#footerForm').trigger('reset'); // очистка формы
-                } else {
-                    alert('Ошибка');
-                }
-            }
-        });
-    });
-});
-
-// Отправка данных на сервер - заказ
-
-$('#modalForm').trigger('reset');
-$(function () {
-    'use strict';
-    $('#modalForm').on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-            url: '../mailsendmailer/order.php',
-            type: 'POST',
-            contentType: false,
-            processData: false,
-            data: new FormData(this),
-            success: function (msg) {
-                console.log(msg);
-                if (msg == 'ok') {
-                    modalSent.setContent(modalSentContent);
-
-                    $('#modalForm').trigger('reset'); // очистка формы
                 } else {
                     alert('Ошибка');
                 }
