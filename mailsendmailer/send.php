@@ -23,18 +23,7 @@ try {
     // Получатель письма
     $mail->addAddress('youremail@yandex.ru');  
     $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
-    // Прикрипление файлов к письму
-if (!empty($_FILES['myfile']['name'][0])) {
-    for ($ct = 0; $ct < count($_FILES['myfile']['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['myfile']['name'][$ct]));
-        $filename = $_FILES['myfile']['name'][$ct];
-        if (move_uploaded_file($_FILES['myfile']['tmp_name'][$ct], $uploadfile)) {
-            $mail->addAttachment($uploadfile, $filename);
-        } else {
-            $msg .= 'Неудалось прикрепить файл ' . $uploadfile;
-        }
-    }   
-}
+
         // -----------------------
         // Само письмо
         // -----------------------
