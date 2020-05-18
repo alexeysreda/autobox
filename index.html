@@ -64,6 +64,10 @@
 
 </header>
 
+
+
+
+
 <main>
 
     <section class="advantages container">
@@ -185,7 +189,7 @@
     <section class="quiz container">
 
 
-        <form class="quiz__form" id="quizForm" action="mailsendmailer/send.php" method="post">
+        <form class="quiz__form" id="quizForm" action="mailsendmailer/quiz.php" method="post">
 
             <article class="quiz__form_wrapper quiz__question_first">
                 <h2 class="quiz__heading" id="quiz">Рассчитайте стоимость вашего
@@ -514,7 +518,7 @@
             </article>
         </div>
 
-        <button class="button">Оформить заказ</button>
+        <button id="orderButton" onclick="modalForm.open()" class="button">Оформить заказ</button>
     </section>
 
     <section class="options">
@@ -696,7 +700,7 @@
         <h2 class="section__heading">Оставьте заявку,</h2>
         <h3 class="section__subheading">если у вас остались вопросы! Мы перезвоним вам в ближайшее время</h3>
 
-        <form class="footer__form" action="mailsendmailer/send.php" method="post">
+        <form id="footerForm" class="footer__form" action="mailsendmailer/question.php" method="post">
 
             <div class="footer__form_wrapper">
                 <div class="footer__column">

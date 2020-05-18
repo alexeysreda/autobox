@@ -33,23 +33,31 @@ body {
 }
 .quiz__form input[type="checkbox"]:checked,
 .footer__form input[type="checkbox"]:checked,
+.modal__window input[type="checkbox"]:checked,
 .quiz__form input[type="checkbox"]:not(:checked),
 .footer__form input[type="checkbox"]:not(:checked),
+.modal__window input[type="checkbox"]:not(:checked),
 .quiz__form input[type="radio"]:checked,
 .footer__form input[type="radio"]:checked,
+.modal__window input[type="radio"]:checked,
 .quiz__form input[type="radio"]:not(:checked),
-.footer__form input[type="radio"]:not(:checked) {
+.footer__form input[type="radio"]:not(:checked),
+.modal__window input[type="radio"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 .quiz__form input[type="checkbox"]:checked + label,
 .footer__form input[type="checkbox"]:checked + label,
+.modal__window input[type="checkbox"]:checked + label,
 .quiz__form input[type="checkbox"]:not(:checked) + label,
 .footer__form input[type="checkbox"]:not(:checked) + label,
+.modal__window input[type="checkbox"]:not(:checked) + label,
 .quiz__form input[type="radio"]:checked + label,
 .footer__form input[type="radio"]:checked + label,
+.modal__window input[type="radio"]:checked + label,
 .quiz__form input[type="radio"]:not(:checked) + label,
-.footer__form input[type="radio"]:not(:checked) + label {
+.footer__form input[type="radio"]:not(:checked) + label,
+.modal__window input[type="radio"]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 30px;
@@ -58,12 +66,16 @@ body {
 }
 .quiz__form input[type="checkbox"]:checked + label:before,
 .footer__form input[type="checkbox"]:checked + label:before,
+.modal__window input[type="checkbox"]:checked + label:before,
 .quiz__form input[type="checkbox"]:not(:checked) + label:before,
 .footer__form input[type="checkbox"]:not(:checked) + label:before,
+.modal__window input[type="checkbox"]:not(:checked) + label:before,
 .quiz__form input[type="radio"]:checked + label:before,
 .footer__form input[type="radio"]:checked + label:before,
+.modal__window input[type="radio"]:checked + label:before,
 .quiz__form input[type="radio"]:not(:checked) + label:before,
-.footer__form input[type="radio"]:not(:checked) + label:before {
+.footer__form input[type="radio"]:not(:checked) + label:before,
+.modal__window input[type="radio"]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -75,25 +87,33 @@ body {
 }
 .quiz__form input[type="checkbox"]:checked + label:before,
 .footer__form input[type="checkbox"]:checked + label:before,
+.modal__window input[type="checkbox"]:checked + label:before,
 .quiz__form input[type="checkbox"]:not(:checked) + label:before,
-.footer__form input[type="checkbox"]:not(:checked) + label:before {
+.footer__form input[type="checkbox"]:not(:checked) + label:before,
+.modal__window input[type="checkbox"]:not(:checked) + label:before {
   border-radius: 2px;
   margin-top: 3px;
 }
 .quiz__form input[type="radio"]:checked + label:before,
 .footer__form input[type="radio"]:checked + label:before,
+.modal__window input[type="radio"]:checked + label:before,
 .quiz__form input[type="radio"]:not(:checked) + label:before,
-.footer__form input[type="radio"]:not(:checked) + label:before {
+.footer__form input[type="radio"]:not(:checked) + label:before,
+.modal__window input[type="radio"]:not(:checked) + label:before {
   border-radius: 100%;
 }
 .quiz__form input[type="checkbox"]:checked + label:after,
 .footer__form input[type="checkbox"]:checked + label:after,
+.modal__window input[type="checkbox"]:checked + label:after,
 .quiz__form input[type="checkbox"]:not(:checked) + label:after,
 .footer__form input[type="checkbox"]:not(:checked) + label:after,
+.modal__window input[type="checkbox"]:not(:checked) + label:after,
 .quiz__form input[type="radio"]:checked + label:after,
 .footer__form input[type="radio"]:checked + label:after,
+.modal__window input[type="radio"]:checked + label:after,
 .quiz__form input[type="radio"]:not(:checked) + label:after,
-.footer__form input[type="radio"]:not(:checked) + label:after {
+.footer__form input[type="radio"]:not(:checked) + label:after,
+.modal__window input[type="radio"]:not(:checked) + label:after {
   content: "";
   position: absolute;
   -webkit-transition: all 0.2s ease;
@@ -103,8 +123,10 @@ body {
 }
 .quiz__form input[type="checkbox"]:checked + label:after,
 .footer__form input[type="checkbox"]:checked + label:after,
+.modal__window input[type="checkbox"]:checked + label:after,
 .quiz__form input[type="checkbox"]:not(:checked) + label:after,
-.footer__form input[type="checkbox"]:not(:checked) + label:after {
+.footer__form input[type="checkbox"]:not(:checked) + label:after,
+.modal__window input[type="checkbox"]:not(:checked) + label:after {
   left: 3px;
   top: 6px;
   width: 14px;
@@ -119,7 +141,8 @@ body {
   transform: rotate(-45deg);
 }
 .quiz__form input[type="checkbox"]:checked + label:before,
-.footer__form input[type="checkbox"]:checked + label:before {
+.footer__form input[type="checkbox"]:checked + label:before,
+.modal__window input[type="checkbox"]:checked + label:before {
   background: #fc0;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -128,8 +151,10 @@ body {
 }
 .quiz__form input[type="radio"]:checked + label:after,
 .footer__form input[type="radio"]:checked + label:after,
+.modal__window input[type="radio"]:checked + label:after,
 .quiz__form input[type="radio"]:not(:checked) + label:after,
-.footer__form input[type="radio"]:not(:checked) + label:after {
+.footer__form input[type="radio"]:not(:checked) + label:after,
+.modal__window input[type="radio"]:not(:checked) + label:after {
   left: 6px;
   top: 6px;
   width: 10px;
@@ -139,14 +164,18 @@ body {
 }
 .quiz__form input[type="checkbox"]:not(:checked) + label:after,
 .footer__form input[type="checkbox"]:not(:checked) + label:after,
+.modal__window input[type="checkbox"]:not(:checked) + label:after,
 .quiz__form input[type="radio"]:not(:checked) + label:after,
-.footer__form input[type="radio"]:not(:checked) + label:after {
+.footer__form input[type="radio"]:not(:checked) + label:after,
+.modal__window input[type="radio"]:not(:checked) + label:after {
   opacity: 0;
 }
 .quiz__form input[type="checkbox"]:checked + label:after,
 .footer__form input[type="checkbox"]:checked + label:after,
+.modal__window input[type="checkbox"]:checked + label:after,
 .quiz__form input[type="radio"]:checked + label:after,
-.footer__form input[type="radio"]:checked + label:after {
+.footer__form input[type="radio"]:checked + label:after,
+.modal__window input[type="radio"]:checked + label:after {
   opacity: 1;
 }
 #changing {
@@ -241,6 +270,75 @@ body {
   align-items: center;
   width: auto;
   height: auto;
+}
+.modal__window {
+  background-color: #242424;
+  color: #fdfdfd;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: auto;
+  max-width: 90vmin;
+}
+.modal__heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 157.2%;
+  margin-bottom: 15px;
+}
+.modal__label {
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+.modal__input {
+  color: #242424;
+  height: 60px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #fdfdfd;
+  border: 1px solid #fc0;
+  margin-bottom: 15px;
+  width: 80%;
+}
+.modal__window div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.modal__window .button {
+  width: 80%;
+  margin-top: 15px;
+}
+.modal__sent {
+  width: 600px;
+  max-width: 90vmin;
+  background-color: #242424;
+  padding: 60px 50px;
+  color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__sent h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 157.2%;
+  margin-bottom: 10px;
+}
+.modal__sent h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 157.2%;
+  color: #fc0;
 }
 * {
   box-sizing: border-box;
@@ -1687,6 +1785,10 @@ a {
   }
   .quiz__question_fourth .quiz__column {
     margin-bottom: 0;
+  }
+  .modal__window,
+  .modal__sent {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 404.98px) {
