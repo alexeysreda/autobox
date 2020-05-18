@@ -84,13 +84,14 @@ buttonFourth.addEventListener('click', function() {
 
 // forms to PHPMailer
 // Отправка данных на сервер
-$('#form').trigger('reset');
+
+$('#quizForm').trigger('reset');
 $(function() {
     'use strict';
     $('#quizForm').on('submit', function(e) {
         e.preventDefault();
         $.ajax({
-            url: 'mailsendmailer/send.php',
+            url: '../mailsendmailer/send.php',
             type: 'POST',
             contentType: false,
             processData: false,
