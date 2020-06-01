@@ -191,179 +191,10 @@
 
         <form class="quiz__form" id="quizForm" action="mailsendmailer/quiz.php" method="post">
 
-            <article class="quiz__form_wrapper quiz__question_first">
-                <h2 class="quiz__heading" id="quiz">Рассчитайте стоимость вашего
-                    шкафа</h2>
-                <h3 class="quiz__subheading">Мы предоставим Вам расчёт и приятный бонус!</h3>
-
-                <div class="quiz__content">
-                    <h5 class="quiz__counter">Вопрос 1 из 4</h5>
-                    <h4 class="quiz__question">Укажите приблизительные размеры</h4>
-
-                    <div class="quiz__inputs">
-                        <div class="quiz__column">
-                            <label class="quiz__label" for="quizWidth">Ширина, мм</label>
-                            <input class="quiz__input_number" type="number" name="quizWidth" id="quizWidth"
-                                   value="Ширина, мм">
-
-
-                        </div>
-                        <div class="quiz__column">
-                            <label class="quiz__label" for="quizHeight">Высота, мм</label>
-                            <input class="quiz__input_number" type="number" name="quizHeight" id="quizHeight"
-                                   value="Высота, мм">
-
-                        </div>
-                        <div class="quiz__column">
-                            <label class="quiz__label" for="quizDepth">Глубина, мм</label>
-                            <input class="quiz__input_number" type="number" name="quizDepth" id="quizDepth"
-                                   value="Глубина, мм">
-
-                        </div>
-                    </div>
-                    <p>Если не знаете какой-либо из параметров, оставьте поле пустым. Если все размеры неизвестны,
-                        переходите к следующему вопросу.</p>
-
-                    <button type="button" class="button button_arrow quiz__button_first">Следующий вопрос <img
-                            src="img/icons/button-arrow-right.svg" alt=""></button>
-                </div>
-            </article>
-
-            <article class="quiz__form_wrapper quiz__question_second">
-                <h2 class="quiz__heading">Рассчитайте стоимость вашего
-                    шкафа</h2>
-                <h3 class="quiz__subheading">Мы предоставим Вам расчёт и приятный бонус!</h3>
-
-                <div class="quiz__content">
-                    <h5 class="quiz__counter">Вопрос 2 из 4</h5>
-                    <h4 class="quiz__question">Как расположены стены рядом с местом, выбранным вами для шкафа?</h4>
-
-                    <div class="quiz__inputs">
-                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementWalls"
-                               value="Рядом есть стены">
-                        <label for="quizPlacementWalls">Рядом есть стены</label>
-                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementNoWalls"
-                               value="Стен рядом нет">
-                        <label for="quizPlacementNoWalls">Стен рядом нет, открытое место</label>
-                        <input type="radio" name="quizPlacement" class="quiz__radio" id="quizPlacementDontKnow"
-                               value="Не знаю">
-                        <label for="quizPlacementDontKnow">Не знаю</label>
-                    </div>
-                    <button type="button" class="button button_arrow quiz__button_second">Следующий вопрос <img
-                            src="img/icons/button-arrow-right.svg" alt=""></button>
-                </div>
-            </article>
-
-            <article class="quiz__form_wrapper quiz__question_third">
-                <h2 class="quiz__heading">Рассчитайте стоимость вашего
-                    шкафа</h2>
-                <h3 class="quiz__subheading">Мы предоставим Вам расчёт и приятный бонус!</h3>
-
-                <div class="quiz__content">
-                    <h5 class="quiz__counter">Вопрос 3 из 4</h5>
-                    <h4 class="quiz__question">Сколько полок вам нужно?</h4>
-
-                    <div class="quiz__inputs">
-                        <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfs-1-3" value="от 1 до 3">
-                        <label for="quizShelfs-1-3">От 1 до 3</label>
-                        <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfs-3-5" value="от 3 до 5">
-                        <label for="quizShelfs-3-5">От 3 до 5</label>
-                        <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfs-5" value="более 5">
-                        <label for="quizShelfs-5">Более 5</label>
-                        <input type="radio" name="quizSelfs" class="quiz__radio" id="quizShelfsDontKnow"
-                               value="не знаю">
-                        <label for="quizShelfsDontKnow">Не знаю</label>
-                    </div>
-                    <button type="button" class="button button_arrow quiz__button_third">Следующий вопрос <img
-                            src="img/icons/button-arrow-right.svg" alt=""></button>
-                </div>
-            </article>
-
-            <article class="quiz__form_wrapper quiz__question_fourth">
-                <h2 class="quiz__heading">Рассчитайте стоимость вашего
-                    шкафа</h2>
-                <h3 class="quiz__subheading">Мы предоставим Вам расчёт и приятный бонус!</h3>
-
-                <div class="quiz__content">
-                    <h5 class="quiz__counter">Вопрос 4 из 4</h5>
-                    <h4 class="quiz__question">Выберите дополнительные опции <span class="quiz__question_italic">(необязательно)</span>
-                    </h4>
-
-                    <div class="quiz__inputs">
-                        <div class="quiz__column">
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-1" value="колёсоотбойники">
-                                <label class="quiz__label_checkbox" for="quizOptions-1">Колёсоотбойники</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-2" value="Модуль пожаротушения">
-                                <label class="quiz__label_checkbox" for="quizOptions-2">Модуль пожаротушения</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-3" value="Чехлы для колёс">
-                                <label class="quiz__label_checkbox" for="quizOptions-3">Чехлы для колёс</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-4" value="Пульты управления">
-                                <label class="quiz__label_checkbox" for="quizOptions-4">Пульты управления</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-5" value="Освещение">
-                                <label class="quiz__label_checkbox" for="quizOptions-5">Освещение</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-11" value="Цветовое решение">
-                                <label class="quiz__label_checkbox" for="quizOptions-11">Индивидуальный цвет</label>
-                            </div>
-                        </div>
-                        <div class="quiz__column">
-
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-6" value="Крепления для спорт.инвентаря">
-                                <label class="quiz__label_checkbox" for="quizOptions-6">Крепления для
-                                    спорт.инвентаря</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-7" value="Гидроизоляция">
-                                <label class="quiz__label_checkbox" for="quizOptions-7">Гидроизоляция</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-8" value="Штанги для одежды">
-                                <label class="quiz__label_checkbox" for="quizOptions-8">Штанги для одежды</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-9" value="Крепления для хранения колёс">
-                                <label class="quiz__label_checkbox" for="quizOptions-9">Крепления для хранения
-                                    колёс</label>
-                            </div>
-                            <div class="quiz__checkbox">
-                                <input class="quiz__checkbox" type="checkbox" name="quizOptions[]"
-                                       id="quizOptions-10" value="Номера парковки или автомобиля">
-                                <label class="quiz__label_checkbox" for="quizOptions-10">Номера парковки /
-                                    автомобиля</label>
-                            </div>
-                        </div>
-
-                    </div>
-                    <button type="button" class="button button_arrow quiz__button_fourth">Следующий вопрос <img
-                            src="img/icons/button-arrow-right.svg" alt=""></button>
-                </div>
-            </article>
 
             <article class="quiz__form_wrapper quiz__question_fifth">
-                <h2 class="quiz__heading">Спасибо! Наш менеджер уже считает стоимость.</h2>
-                <h3 class="quiz__subheading">Оставьте Ваши контакты, и мы перезвоним Вам в течение часа, а также
-                    зафиксируем за Вами скидку 5%.</h3>
+                <h2 class="quiz__heading" id="quiz">Закажите замер вашего шкафа</h2>
+                <h3 class="quiz__subheading">Наш менеджер перезвонит Вам в течение 15 минут.</h3>
 
 
                 <div class="quiz__content">
@@ -705,11 +536,11 @@
             <div class="footer__form_wrapper">
                 <div class="footer__column">
                     <label class="footer__label" for="footerName">Ваше имя</label>
-                    <input type="text" class="footer__input" id="footerName" name="name" required>
+                    <input type="text" class="footer__input" id="footerName" name="footerName" required>
                 </div>
                 <div class="footer__column">
                     <label class="footer__label" for="footerPhone">Ваш телефон</label>
-                    <input type="tel" class="footer__input" id="footerPhone" name="name" required>
+                    <input type="tel" class="footer__input" id="footerPhone" name="footerPhone" required>
 
                 </div>
                 <div class="footer__column">
@@ -779,8 +610,8 @@
         </article>
 
         <div class="footer__info">
-            <p class="footer__copyright">2020. Автобокс. Все права защищены.</p>
-            <a href="" class="footer__policy">Политика конфиденциальности</a>
+            <p class="footer__copyright">2020. ИП Долгов Ю.В. Все права защищены.</p>
+            <a href="policy.html" class="footer__policy">Политика конфиденциальности</a>
         </div>
 
 
