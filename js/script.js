@@ -90,7 +90,7 @@ $(function () {
     $('#quizForm').on('submit', function (e) {
         e.preventDefault();
         $.ajax({
-            url: '../mailsendmailer/quiz.php',
+            url: '../mailsendmailer/question.php',
             type: 'POST',
             contentType: false,
             processData: false,

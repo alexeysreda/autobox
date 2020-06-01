@@ -189,7 +189,7 @@
     <section class="quiz container">
 
 
-        <form class="quiz__form" id="quizForm" action="mailsendmailer/quiz.php" method="post">
+        <form class="quiz__form" id="quizForm" action="mailsendmailer/question.php" method="post">
 
 
             <article class="quiz__form_wrapper quiz__question_fifth">
@@ -202,13 +202,13 @@
                     <div class="quiz__inputs">
                         <div class="quiz__column">
                             <label class="quiz__label" for="quizName">Ваше имя</label>
-                            <input class="quiz__input_number" type="text" name="quizName" id="quizName" required>
+                            <input class="quiz__input_number" type="text" name="Name" id="quizName" required>
 
                         </div>
 
                         <div class="quiz__column">
                             <label class="quiz__label" for="quizPhone">Ваш телефон</label>
-                            <input class="quiz__input_number" type="tel" name="quizPhone" id="quizPhone" required>
+                            <input class="quiz__input_number" type="tel" name="Phone" id="quizPhone" required>
 
                         </div>
 
@@ -350,7 +350,7 @@
         </div>
 
         <a href="#quiz" class="button">Оформить заказ</a>
-        <p>Заявки принимаются в режиме 24/7</p>
+        <p class="quiz__text">Заявки принимаются в режиме 24/7</p>
     </section>
 
     <section class="options">
@@ -537,11 +537,11 @@
             <div class="footer__form_wrapper">
                 <div class="footer__column">
                     <label class="footer__label" for="footerName">Ваше имя</label>
-                    <input type="text" class="footer__input" id="footerName" name="footerName" required>
+                    <input type="text" class="footer__input" id="footerName" name="Name" required>
                 </div>
                 <div class="footer__column">
                     <label class="footer__label" for="footerPhone">Ваш телефон</label>
-                    <input type="tel" class="footer__input" id="footerPhone" name="footerPhone" required>
+                    <input type="tel" class="footer__input" id="footerPhone" name="Phone" required>
 
                 </div>
                 <div class="footer__column">

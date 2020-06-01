@@ -1738,6 +1738,9 @@ a {
   .modal__sent {
     padding: 10px;
   }
+  .quiz__text {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 404.98px) {
   .clear__gradient {
