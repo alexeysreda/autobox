@@ -54,7 +54,7 @@
             <div class="header__location">
                 <img src="img/icons/header-location.svg" alt="">
                 <h4 class="header__heading_h4">Мы работаем для вас в Ростове-на-Дону, Сочи и Краснодаре<br>
-                в <span class="header__heading_bold">будни, выходные и праздники</span></h4>
+                    <span class="header__heading_bold">24/7 в будни, выходные и праздники</span></h4>
             </div>
         </div>
         <div class="header__heading_right">
@@ -350,6 +350,7 @@
         </div>
 
         <a href="#quiz" class="button">Оформить заказ</a>
+        <p>Заявки принимаются в режиме 24/7</p>
     </section>
 
     <section class="options">
@@ -635,6 +636,7 @@
         centeredSlides: false,
         spaceBetween: 30,
 
+
         navigation: {
             nextEl: '.gallery__button_next',
             prevEl: '.gallery__button_prev',
@@ -642,14 +644,17 @@
         breakpoints: {
 
             991.98: {
-                slidesPerView: 3
+                slidesPerView: 3,
+                slidesPerGroup: 3
 
             },
             767.98: {
-                slidesPerView: 2
+                slidesPerView: 2,
+                slidesPerGroup: 2
             },
             575.98: {
-                slidesPerView: 1
+                slidesPerView: 1,
+                slidesPerGroup: 1
             }
 
         }

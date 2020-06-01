@@ -166,6 +166,10 @@
         box-shadow: 0 10px 30px $color-darkgray;
     }
 
+    .header__li:nth-child(3) {
+        margin-right: 0;
+    }
+
     .header__link_phone {
         color: $color-main;
     }
@@ -174,6 +178,7 @@
         font-size: 2rem;
         background: linear-gradient(to bottom, transparent 0%, transparent 59.9%, $color-yellow-light 60%, $color-yellow-dark 100%);
     }
+
 
     .advantages__list {
         flex-direction: column;
@@ -199,10 +204,7 @@
         width: 100%;
     }
 
-    .quiz__inputs {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
 
     .quiz__input_number {
         width: 100%;
@@ -423,6 +425,11 @@
         margin-bottom: 25px;
     }
 
+    .quiz__inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .quiz__input_number {
         margin-bottom: 5px;
     }
@@ -583,7 +590,21 @@
 }
 
 @media screen and (max-width: 404.98px) {
-    .clear__item {
-        width: 100%;
+    .clear__gradient {
+        width: 150px;
+    }
+    .clear__image {
+        width: 140px;
+
+
+    }
+}
+
+
+@media screen and (max-width: 334.98px) {
+
+    .clear__image img {
+        max-width: 140px;
+
     }
 }
